@@ -1,0 +1,269 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>计算机网络相关 | 周先生的学习博客</title><meta name="author" content="zhouyuejin"><meta name="copyright" content="zhouyuejin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="GET 和 POST 的请求的区别get和post是http请求的两种方式，其区别如下： 应用场景：get请求是一个幂等的请求，一般get请求用于对服务器资源不会产生影响的场景，比如说请求一个网页资源。而post不是一个幂等请求，一般用于对服务器资源会产生影响的情景，比如用户注册这一类的操作。 是否缓存：因为两者应用场景不同，浏览器一般会get请求缓存，但很少对post请求缓存。 发送报文格式：g">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络相关">
+<meta property="og:url" content="http://example.com/2025/03/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/index.html">
+<meta property="og:site_name" content="周先生的学习博客">
+<meta property="og:description" content="GET 和 POST 的请求的区别get和post是http请求的两种方式，其区别如下： 应用场景：get请求是一个幂等的请求，一般get请求用于对服务器资源不会产生影响的场景，比如说请求一个网页资源。而post不是一个幂等请求，一般用于对服务器资源会产生影响的情景，比如用户注册这一类的操作。 是否缓存：因为两者应用场景不同，浏览器一般会get请求缓存，但很少对post请求缓存。 发送报文格式：g">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2025-03-05T02:49:03.623Z">
+<meta property="article:modified_time" content="2025-03-05T06:57:31.052Z">
+<meta property="article:author" content="zhouyuejin">
+<meta property="article:tag" content="vue、JavaScript、CSS、Node.js、前端知识">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2025/03/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.12.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '计算机网络相关',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-03-05 14:57:31'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">13</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-tag"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 资料</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="周先生的学习博客"><span class="site-name">周先生的学习博客</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-tag"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 资料</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">计算机网络相关</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-03-05T02:49:03.623Z" title="发表于 2025-03-05 10:49:03">2025-03-05</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-03-05T06:57:31.052Z" title="更新于 2025-03-05 14:57:31">2025-03-05</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="计算机网络相关"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="GET-和-POST-的请求的区别"><a href="#GET-和-POST-的请求的区别" class="headerlink" title="GET 和 POST 的请求的区别"></a>GET 和 POST 的请求的区别</h1><p>get和post是http请求的两种方式，其区别如下：</p>
+<p>应用场景：get请求是一个幂等的请求，一般get请求用于对服务器资源不会产生影响的场景，比如说请求一个网页资源。而post不是一个幂等请求，一般用于对服务器资源会产生影响的情景，比如用户注册这一类的操作。</p>
+<p>是否缓存：因为两者应用场景不同，浏览器一般会get请求缓存，但很少对post请求缓存。</p>
+<p>发送报文格式：get请求的报文中实体部门为空，post请求报文实体部门一般为向服务器发送的数据。</p>
+<p>安全性：get请求可以将请求的参数放入URL中向服务器发送，这样的做法相当于post请求来说不太安全的，因为请求的URL会被保留在历史记录中。</p>
+<p>请求长度：浏览器由于对URL长度的限制，所以会影响get请求发送数据时的长度。这个限制是浏览器规定的，并不是RFC规定的。</p>
+<p>参数类型：post请求参数支持传递更多的数据类型。</p>
+<h1 id="POST-和-PUT-请求的区别"><a href="#POST-和-PUT-请求的区别" class="headerlink" title="POST 和 PUT 请求的区别"></a>POST 和 PUT 请求的区别</h1><ul>
+<li>put请求是向服务器端发送数据，从而修改数据的内容，但是不会增加数据的类型等，也就是说无论进行多少次put操作，其结果并没有什么不同。（可以理解为实时更新数据）</li>
+<li>post请求是向服务器端发送数据，该请求会改变数据的种类和资源，它会创建新的内容。（可以理解为创建数据）</li>
+</ul>
+<h1 id="常见的http请求头和响应头"><a href="#常见的http请求头和响应头" class="headerlink" title="常见的http请求头和响应头"></a>常见的http请求头和响应头</h1><p>HTTP Request Header 常见的请求头:</p>
+<ul>
+<li>Accept：浏览器能够处理的内容类型。</li>
+<li>Accept-Charset：浏览器能够显示的字符集。</li>
+<li>Accept-Encoding：浏览器能够处理的压缩编码。</li>
+<li>Accept-Language：浏览器当前设置的语言。</li>
+<li>Connection：浏览器与服务器之间连接的类型。</li>
+<li>Cookie：当前页面设置的任何cookie。</li>
+<li>Host：发出请求的页面所在的域。</li>
+<li>Referer：发出请求的页面的URL。</li>
+<li>User-Agent：浏览器的用户代理字符串。</li>
+</ul>
+<p>HTTP Responses Header 常见的响应头：</p>
+<ul>
+<li>Date：表示消息发送时间，时间描述格式由rfc822定义。</li>
+<li>server：服务器名称。</li>
+<li>Connection：浏览器与服务器之间连接的类型。</li>
+<li>Cache-Control：控制http缓存。</li>
+<li>content-type：表示后面的文档属于什么MIME类型。</li>
+</ul>
+<p>常见的 Content-Type 属性值有以下四种：</p>
+<ul>
+<li>application&#x2F;x-www-form-urlencoded：浏览器的原生form表单，如果不设置enctype属性，那么最终就会以application&#x2F;x-www-form-urlencoded方式提交数据。该方式提交的数据放在body里面，数据按照key1&#x3D;val1&amp;key2&#x3D;val2的方式进行编码，key和val都进行了URL转码。</li>
+<li>multipart&#x2F;form-data：该种方式也是一个常见的post提交方式，通常表单上传文件时使用该种方式。</li>
+<li>application&#x2F;json：服务器消息主体是序列化的JSON字符串。</li>
+<li>text&#x2F;xml：该种方式主要用来提交XML格式的数据。</li>
+</ul>
+<h1 id="常见的http请求方法"><a href="#常见的http请求方法" class="headerlink" title="常见的http请求方法"></a>常见的http请求方法</h1><ul>
+<li>get：向服务器获取数据。</li>
+<li>POST：将实体提交到指定的资源，通常会造成服务器资源的修改。</li>
+<li>put：上传文件，更新数据。</li>
+<li>DELETE：删除服务器上的对象。</li>
+<li>HEAD：获取报文首部，与get相比，不返回报文主体部分。</li>
+<li>OPTIONS：询问支持的请求方法，用来跨域请求。</li>
+<li>CONNECT：要求与代理服务器通信时建立隧道，使用隧道进行TCP通信。</li>
+<li>TRACE：回显服务器收到的请求，主要用于测试或诊断。</li>
+</ul>
+<h1 id="HTTP-1-1-和-HTTP-2-0-的区别"><a href="#HTTP-1-1-和-HTTP-2-0-的区别" class="headerlink" title="HTTP 1.1 和 HTTP 2.0 的区别"></a>HTTP 1.1 和 HTTP 2.0 的区别</h1><ul>
+<li>二进制协议：HTTP&#x2F;2是一个二进制协议。在http1.1版中，报文的头部信息必须是文本（ASCII 编码），数据体可以是文本，也可以是二进制。http&#x2F;2则是一个彻底的二进制协议，头信息和数据体都是二进制，并且统称为帧，可以分为头信息帧和数据帧。帧的概念是它实现多路复用的基础。</li>
+<li>多路复用：http&#x2F;2实现了多路复用，http&#x2F;2仍然复用TCP连接，但是在一个连接里，客户端和服务器都可以同时发送多个请求或回应，而且不用按照顺序一一发送，这样就避免了“队头堵塞”的问题。</li>
+<li>数据流：http&#x2F;2使用了数据流的概念，因为http&#x2F;2的数据包是不按顺序发送的，同一连接里面连续的数据包，可能属于不同的请求。因此，必须要对数据包标记，指出它属于哪个请求。http&#x2F;2将每个请求或回应的数据包，称为一个数据流。每个数据流都有一个独一无二的编号。数据包发送时，都必须标记数据流ID，用于区分它属于哪个数据流。</li>
+<li>头信息压缩：http&#x2F;2实现了头信息压缩，由于http1.1协议不带状态，每次请求都必须附上所有信息。所以，请求的很多字段都是重复的，比如cookie和User Agent，一模一样的内容，每次请求都必须附带，这会浪费很多带宽，也影响速度。http&#x2F;2对这一点做了优化，引入了头信息压缩机制。一方面，头信息使用gzip或者compress压缩后在发送，另一方面，客户端和服务器同时维护一张头信息表，所有的字段都会存入这个表，生成一个索引号，以后就不发送同样的字段了，只发送索引号，这样就提高速度。</li>
+<li>服务器推送：http&#x2F;2允许服务器未经请求，主动向客户端发送资源，这叫服务器推送。使用服务器推送提前给客户端推送必要的资源，这样就可以相对减少一些延迟时间。这里需要注意的是http2下服务器主动推送的是静态资源，和WebSocket以及使用SSE等方式向客户端发送即时数据的推送是不同的。</li>
+</ul>
+<h1 id="HTTP-和-HTTPS-协议的区别？"><a href="#HTTP-和-HTTPS-协议的区别？" class="headerlink" title="HTTP 和 HTTPS 协议的区别？"></a>HTTP 和 HTTPS 协议的区别？</h1><ul>
+<li>HTTPS协议需要CA证书，费用较高。</li>
+<li>http协议是超文传输协议，信息是明文传输的，而https则是具有安全性的SSL加密传输协议。</li>
+<li>使用不同方式的连接，端口也不同，http协议的端口是80，https的协议端口是443。</li>
+<li>http协议连接很简单，是无状态的，https协议是具有SSL和http协议构建的可进行加密传输、身份认证的网络协议，比http更安全。</li>
+</ul>
+<h1 id="说一说http3-0"><a href="#说一说http3-0" class="headerlink" title="说一说http3.0"></a>说一说http3.0</h1><p>http3.0基于UDP协议实现了类似TCP的多路复用数据流，传输可靠性等功能，这套功能被称为QUIC协议。</p>
+<ol>
+<li>流量控制、传输可靠性功能：QUIC 在 UDP 的基础上增加了一层来保证数据传输的可靠性，它提供了数据包重传、拥塞控制、以及其他一些TCP的特性。</li>
+<li>集成的TLS 加密功能：目前QUIC 使用了TLS1.3，减少了握手所花费的RTT数。</li>
+<li>多路复用：同一物理连接上可以有多个独立的逻辑数据流，实现了数据流的单独传输，解决了TCP的队头阻塞问题。</li>
+<li>快速握手：由于基于UDP，可以实现使用0 ~ 1 个 RTT 来建立连接。</li>
+</ol>
+<h1 id="什么是https协议？"><a href="#什么是https协议？" class="headerlink" title="什么是https协议？"></a>什么是https协议？</h1><p>超文本传输安全协议，是一种通过计算机网络进行安全通信的传输协议。https经由http进行通信，利用SSL&#x2F;TLS来加密数据包。https的主要目的是提供对网站服务器的身份认证，保护交换数据的隐私与完整性。</p>
+<p>http协议采用明文传输信息，存在信息窃听、信息篡改和信息劫持的风险，而TLS&#x2F;SSL具有身份验证、信息加密和完整性校验的功能，可以避免此类问题发生。</p>
+<p>安全层的主要职责就是对发起的http请求的数据进行加密操作和对接收到的http内容进行解密操作。</p>
+<h1 id="https通信（握手）过程"><a href="#https通信（握手）过程" class="headerlink" title="https通信（握手）过程"></a>https通信（握手）过程</h1><ol>
+<li>客户端向服务器发起请求，请求中包含使用的协议版本号、生成的一个随机数、以及客户端支持的加密方法。</li>
+<li>客户端接收到请求后，确认双方使用的加密方法，并给出服务器的证书，以及一个服务器生成的随机数。</li>
+<li>客户端确认服务器证书有效后，生成一个新的随机数，并使用数字证书中的公钥，然后发给服务器，并且还会提供一个前面所有内容的hash值，用来供服务器检验。</li>
+<li>服务器使用自己的私钥，来解密客户端发过来的随机数，并提供前面所有内容的hash值来供客户端校验。</li>
+<li>客户端和服务器根据约定的加密方法使用前面的三个随机数，生成对话私钥，以后的对话过程都使用这个私钥来加密信息。</li>
+</ol>
+<h1 id="DNS完整的查询过程"><a href="#DNS完整的查询过程" class="headerlink" title="DNS完整的查询过程"></a>DNS完整的查询过程</h1><ol>
+<li>在浏览器缓存中查找对应的IP地址，如果查找到就直接返回，若找不到继续下一步。</li>
+<li>将请求发送给本地DNS服务器，在本地域名服务器缓存中查询，如果找到，就直接将查找结果返回，若找不到继续下一步。</li>
+<li>本地DNS服务器向顶级域名服务器发送请求，接收请求的服务器查询自己的缓存，如果有记录，就返回查询结果，如果没有就返回相关的下一级的权威域名服务器的地址。</li>
+<li>本地DNS服务器向权威域名服务器发送请求，域名服务器返回对应的结果。</li>
+<li>本地DNS服务器将返回结果保存在缓存中，便于下次使用。</li>
+<li>本地DNS服务器将返回结果返回给浏览器。</li>
+</ol>
+<h1 id="OSI七层模型"><a href="#OSI七层模型" class="headerlink" title="OSI七层模型"></a>OSI七层模型</h1><ol>
+<li><p>应用层</p>
+<p>OSI参考模型中最接近用户的一层，是为计算机用户提供应用接口，也为用户直接提供各种网络服务。我们常见的网络协议有：http、https、FTP，POP3、SMTP 等。</p>
+</li>
+<li><p>表示层</p>
+<p>表示层提供各种应用层数据的编码和转换功能，确保一个系统的应用层发送的数据能被另外一个系统的应用层识别。如果必要，该层可提供一种标准表示形式，用于将计算机内部的多种数据格式转换成通信中采用的标准表示形式。数据压缩和加密也是表示层可提供的转换功能之一。</p>
+<p>在项目开发中，为了方便数据传输，可以使用base64对数据进行编解码。如果按照功能来划分，base64应该是工作在表示层。</p>
+</li>
+<li><p>会话层</p>
+<p>会话层就是负责建立、管理、终止表示层实体之间的通信会话。该层的通信由不同设备中的应用程序之间的服务请求和响应组成。</p>
+</li>
+<li><p>传输层</p>
+<p>传输层建立主机端到端的连接，传输层的作用是为上层协议提供端到端的可靠和透明的数据传输服务，包括处理差错控制和流量控制等问题。该层向高层屏蔽了下层数据通信的细节，使高层用户看到的只是在两个传输实体间的一条主机到主机的、可由用户控制和设定的可靠的数据通路。</p>
+</li>
+<li><p>网络层</p>
+<p>本层通过IP寻址来建立两个节点之间的连接，为源端的传输层送来的分组，选择合适的路由和交换节点，正确无误的按照地址传送给目的端的运输层。</p>
+<p>网络层规定了数据包的传输路线，而传输层规定了数据包的传输方式。</p>
+</li>
+<li><p>数据链路层</p>
+<p>将比特组合成字节，再将字节组合成帧，使用链路层地址（以太网使用Mac地址）来访问介质，并进行差错检测。</p>
+</li>
+<li><p>物理层</p>
+<p>实际最终信号的传输是通过物理层实现的。通过物理介质传输比特流。规定了电平、速度和电缆的针脚。常用的设备有（各种物理设备）集线器、中继器、调制解调器、网线、双绞线、同轴电缆。</p>
+</li>
+</ol>
+<p>OSI七层模型的特点：对等通信。</p>
+<p>对等通信，为了使数据分组从源传送到目的地，源端OSI模型的每一层都必须与目的端的对等层进行通信，这种通信方式称为对等通信。在每一层通信过程中，使用本层自己的协议通信。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">zhouyuejin</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2025/03/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/">http://example.com/2025/03/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://example.com" target="_blank">周先生的学习博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2025/03/03/%E6%B5%8F%E8%A7%88%E5%99%A8%E9%83%A8%E5%88%86/" title="浏览器部分"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">浏览器部分</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">zhouyuejin</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">13</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#GET-%E5%92%8C-POST-%E7%9A%84%E8%AF%B7%E6%B1%82%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.</span> <span class="toc-text">GET 和 POST 的请求的区别</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#POST-%E5%92%8C-PUT-%E8%AF%B7%E6%B1%82%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">2.</span> <span class="toc-text">POST 和 PUT 请求的区别</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84http%E8%AF%B7%E6%B1%82%E5%A4%B4%E5%92%8C%E5%93%8D%E5%BA%94%E5%A4%B4"><span class="toc-number">3.</span> <span class="toc-text">常见的http请求头和响应头</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84http%E8%AF%B7%E6%B1%82%E6%96%B9%E6%B3%95"><span class="toc-number">4.</span> <span class="toc-text">常见的http请求方法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTTP-1-1-%E5%92%8C-HTTP-2-0-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">5.</span> <span class="toc-text">HTTP 1.1 和 HTTP 2.0 的区别</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTTP-%E5%92%8C-HTTPS-%E5%8D%8F%E8%AE%AE%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">6.</span> <span class="toc-text">HTTP 和 HTTPS 协议的区别？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%B4%E4%B8%80%E8%AF%B4http3-0"><span class="toc-number">7.</span> <span class="toc-text">说一说http3.0</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFhttps%E5%8D%8F%E8%AE%AE%EF%BC%9F"><span class="toc-number">8.</span> <span class="toc-text">什么是https协议？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#https%E9%80%9A%E4%BF%A1%EF%BC%88%E6%8F%A1%E6%89%8B%EF%BC%89%E8%BF%87%E7%A8%8B"><span class="toc-number">9.</span> <span class="toc-text">https通信（握手）过程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#DNS%E5%AE%8C%E6%95%B4%E7%9A%84%E6%9F%A5%E8%AF%A2%E8%BF%87%E7%A8%8B"><span class="toc-number">10.</span> <span class="toc-text">DNS完整的查询过程</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#OSI%E4%B8%83%E5%B1%82%E6%A8%A1%E5%9E%8B"><span class="toc-number">11.</span> <span class="toc-text">OSI七层模型</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/03/05/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E7%9B%B8%E5%85%B3/" title="计算机网络相关">计算机网络相关</a><time datetime="2025-03-05T02:49:03.623Z" title="发表于 2025-03-05 10:49:03">2025-03-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/03/03/%E6%B5%8F%E8%A7%88%E5%99%A8%E9%83%A8%E5%88%86/" title="浏览器部分">浏览器部分</a><time datetime="2025-03-03T02:02:04.158Z" title="发表于 2025-03-03 10:02:04">2025-03-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/02/28/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/" title="前端工程化">前端工程化</a><time datetime="2025-02-28T03:33:41.735Z" title="发表于 2025-02-28 11:33:41">2025-02-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/02/28/%E5%89%8D%E7%AB%AF%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" title="前端性能优化">前端性能优化</a><time datetime="2025-02-28T01:19:49.442Z" title="发表于 2025-02-28 09:19:49">2025-02-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/02/17/Vue%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/" title="Vue知识点总结">Vue知识点总结</a><time datetime="2025-02-17T03:24:00.000Z" title="发表于 2025-02-17 11:24:00">2025-02-17</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By zhouyuejin</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.12.0"></script><script src="/js/main.js?v=4.12.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
